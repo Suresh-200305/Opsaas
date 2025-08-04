@@ -77,9 +77,7 @@ model = joblib.load("opportunity_model.pkl")
 # Input column order (match model training)
 feature_columns = [
     'Support Ticket Count', 'Support Ticket Decline', 'Jira Ticket Count', 
-    'Monthly Consumption', 'Consumption % as per committed transactions',
-    'POC NPS', 'DM NPS', 'Count of enabled B2C channels', 'Count of enabled B2B channels', 
-    'Count of enabled warehouses', 'Count of enabled stores', 'Customer Tenure (months)', 
+    'Monthly Consumption', 'Count of enabled warehouses', 'Count of enabled stores', 'Customer Tenure (months)', 
     'Last Engagement Score',
     # Add your actual dummies for Industry, Region (e.g., 'Industry_Healthcare', etc.)
     # See 'pd.get_dummies' output for your full list
